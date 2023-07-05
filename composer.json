@@ -1,0 +1,38 @@
+{
+    "name": "suppme/suppme-laravel-noteable",
+    "description": "A package to enable assigning notes to Eloquent Models",
+    "keywords": [
+        "suppme",
+        "laravel-note"
+    ],
+    "homepage": "https://gitlab.com/suppme/suppme-laravel-noteable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "suppme",
+            "email": "hello@suppme.com",
+            "homepage": "https://suppme.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Suppme\\ModelNotes\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Suppme\\ModelNotes\\ModelNotesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
