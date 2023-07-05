@@ -1,13 +1,18 @@
+> This is a fork of [DigitalCloud/laravel-model-notes](https://github.com/DigitalCloud/laravel-model-notes) due of
+> lacking maintenance we decided to keep it up, and adjust to our needs.
+
 # Laravel Model Notes
+
 This package allows you to add notes to your model.
 
 ## Description
-Suppose you are working on model, say Invoice model, and this invoice need to pass some management process. Each management state need the manager to add some notes on this invoice, and you need to track all notes for this invoice.
+
+Suppose you are working on model, say Invoice model, and this invoice need to pass some management process. Each
+management state need the manager to add some notes on this invoice, and you need to track all notes for this invoice.
 This package allow you to do this job just by adding some trait to your model.
 
-
 ## Add note to Eloquent models
- 
+
 This package provides a `HasNotes` trait that, once installed on a model, allows you to do things like this:
 
 ```php
@@ -27,6 +32,7 @@ composer require suppme/laravel-noteable
 ```
 
 You must publish the migration with:
+
 ```bash
 php artisan vendor:publish --provider="Suppme\ModelNotes\ModelNotesServiceProvider" --tag="migrations"
 ```
@@ -38,6 +44,7 @@ php artisan migrate
 ```
 
 Optionally you can publish the config-file with:
+
 ```bash
 php artisan vendor:publish --provider="Suppme\ModelNotes\ModelNotesServiceProvider" --tag="config"
 ```
@@ -95,7 +102,8 @@ $allNotes = $model->notes;
 
 ### Custom model and migration
 
-You can change the model used by specifying a class name in the `note_model` key of the `model-notes` config file. 
+You can change the model used by specifying a class name in the `note_model` key of the `model-notes` config file.
 
-You can change the column name used in the note table (`model_id` by default) when using a custom migration where you changed 
+You can change the column name used in the note table (`model_id` by default) when using a custom migration where you
+changed
 that. In that case, simply change the `model_primary_key_attribute` key of the `model-notes` config file. 
