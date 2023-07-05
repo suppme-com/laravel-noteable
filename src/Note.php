@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Note extends Model {
 
-
     protected $guarded = [];
 
     protected $table = 'notes';

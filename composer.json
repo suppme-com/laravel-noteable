@@ -3,7 +3,7 @@
     "description": "A package to enable assigning notes to Eloquent Models",
     "keywords": [
         "suppme",
-        "laravel-note"
+        "laravel-noteable"
     ],
     "homepage": "https://gitlab.com/suppme/suppme-laravel-noteable",
     "license": "MIT",
